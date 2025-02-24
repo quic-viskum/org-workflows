@@ -9,7 +9,7 @@ on:
 
 jobs:
   check-branches:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Check branches
         env:
