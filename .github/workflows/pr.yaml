@@ -24,6 +24,8 @@ jobs:
          with:
               repository: quic-viskum/checker-scripts
               path: checker-scripts
-
+      - name: Chmod
+        run: chmod +x ./checker-scripts/pylint_checker.sh
+        
       - name: Run the checker
         run: ./checker-scripts/pylint_checker.sh
