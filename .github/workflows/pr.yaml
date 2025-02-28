@@ -20,3 +20,8 @@ jobs:
             echo "Create a pull request to main branch"
             exit 1
           fi
+      - name: Check out the repository
+        uses: quic-viskum/checker-scripts@main
+
+      - name: Run the checker
+        run: ./pylint_checker.sh
